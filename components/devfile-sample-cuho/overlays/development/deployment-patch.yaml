@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-cuho
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0074-tenant/tkrw-pr712-0075-0074-app/devfile-sample-cuho@sha256:e7c2cb7a37b40c3563b3d24c1b132fdda6eb4368c21b69d73054807b0444bbe1
+        name: my-nodejs
+        resources: {}
+status: {}
